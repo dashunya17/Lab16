@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String reg1= "/\\*.*?\\*/";
+        String reg2= "//.*";
+        Pattern p1 = Pattern.compile(reg1);
+        Pattern p2 = Pattern.compile(reg2);
+        try(BufferedReader br = new BufferedReader(new FileReader("Lab.txt"));
+        BufferedWriter bt = new BufferedWriter( new FileWriter("rez.txt"))){
+            String text;
+            String text1;
+        while ((text = br.readLine()) != null) {
+            text1= p1.matcher(text).replaceAll("");
+            text1 =p2.matcher(text1).replaceAll("");
+            bt.write(text1);
+            bt.newLine();
+        }
+        }
+        catch (IOException ex){
+            System.out.println(ex.getMessage());
+        }
+
+    }
+}
