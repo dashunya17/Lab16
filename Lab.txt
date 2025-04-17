@@ -1,9 +1,9 @@
 import java.io.*;
-import java.util.regex.Pattern;/*dfghjk*/
+import java.util.regex.Pattern; /*dfghjk*/
 //zsxcvbndfgh
 public class Main {
     public static void main(String[] args) {
-/*dfghjk
+/*dfghjk*
 fghjkl*/
         String reg1= "/\\*.*?\\*/";
         String reg2= "//.*";

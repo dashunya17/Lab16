@@ -1,11 +1,11 @@
 import java.io.*;
-import java.util.regex.Pattern;
+import java.util.regex.Pattern; 
 
 public class Main {
     public static void main(String[] args) {
-
-
-        String reg1= "/\\*.*?\\";
+/*dfghjk*
+fghjkl*/
+        String reg1= "/\\*.*?\\*/";
         String reg2= "
         Pattern p1 = Pattern.compile(reg1);
         Pattern p2 = Pattern.compile(reg2);
