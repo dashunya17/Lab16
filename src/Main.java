@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         String reg1= "/\\*(.*|(\\s)*)|(.*|(\\s)*)\\*/$";
         String reg2= "//.*";
-        Pattern p1 = Pattern.compile(reg1);
+        Pattern p1 = Pattern.compile(reg1, Pattern.DOTALL);
         Pattern p2 = Pattern.compile(reg2);
         try(BufferedReader br = new BufferedReader(new FileReader("Lab.txt"));
         BufferedWriter bt = new BufferedWriter( new FileWriter("rez.txt"))){
